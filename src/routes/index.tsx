@@ -31,12 +31,12 @@ function Index() {
 
       {/* Floating Nav */}
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-        <div className="flex items-center gap-1 bg-white/80 backdrop-blur-md px-2 py-2 rounded-full border border-brand/10 shadow-xl shadow-brand/10">
-          <a href="#home" className="px-5 py-2 rounded-full bg-brand text-white font-medium text-sm">Home</a>
-          <a href="#work" className="px-5 py-2 rounded-full hover:bg-brand/5 font-medium text-sm transition-colors">Work</a>
-          <a href="#about" className="px-5 py-2 rounded-full hover:bg-brand/5 font-medium text-sm transition-colors">About</a>
-          <a href="#contact" className="px-5 py-2 rounded-full hover:bg-brand/5 font-medium text-sm transition-colors text-brand">Hire Me</a>
-        </div>
+         <div className="flex items-center gap-1 bg-white/80 backdrop-blur-md px-1.5 sm:px-2 py-2 rounded-full border border-brand/10 shadow-xl shadow-brand/10 max-w-[92vw] overflow-x-auto">
+   <a href="#home" className="px-3 sm:px-5 py-2 rounded-full bg-brand text-white font-medium text-xs sm:text-sm whitespace-nowrap">Home</a>
+   <a href="#work" className="px-3 sm:px-5 py-2 rounded-full hover:bg-brand/5 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap">Work</a>
+   <a href="#about" className="px-3 sm:px-5 py-2 rounded-full hover:bg-brand/5 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap">About</a>
+   <a href="#contact" className="px-3 sm:px-5 py-2 rounded-full hover:bg-brand/5 font-medium text-xs sm:text-sm transition-colors text-brand whitespace-nowrap">Hire Me</a>
+ </div>
       </nav>
 
       {/* Hero */}
@@ -45,8 +45,8 @@ function Index() {
 
         {/* Giant background word */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
-          <h1 className="font-display font-bold text-[28vw] leading-none text-brand/10 tracking-tighter uppercase mt-[-6%] animate-drift">
-            Motion
+          <h1 className="font-display font-bold text-[15vw] leading-none text-brand/10 tracking-tighter uppercase mt-[-6%] animate-drift">
+            PORTFOLIO
           </h1>
         </div>
 
@@ -69,10 +69,10 @@ function Index() {
             alt="Vishwa, video editor and motion designer"
             width={800}
             height={1000}
-            className="w-[320px] md:w-[440px] h-auto drop-shadow-2xl"
+            className="w-[70vw] max-w-[320px] md:w-[440px] md:max-w-none h-auto drop-shadow-2xl"
           />
 
-          <div className="absolute -bottom-4 -right-8 md:-right-20 bg-white p-5 md:p-6 rounded-2xl shadow-2xl border border-brand/10 max-w-[260px] rotate-3 animate-floaty">
+ <div className="absolute -bottom-4 -right-2 sm:-right-8 md:-right-20 bg-white p-4 sm:p-5 md:p-6 rounded-2xl shadow-2xl border border-brand/10 max-w-[200px] sm:max-w-[260px] rotate-3 animate-floaty">
             <h2 className="font-display text-2xl font-bold text-brand leading-tight">Vishwa.</h2>
             <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mt-1">Video & Motion Artist</p>
             <p className="mt-3 text-sm text-slate-600 leading-relaxed italic">&ldquo;Turning raw footage into rhythmic visual stories that stick.&rdquo;</p>
