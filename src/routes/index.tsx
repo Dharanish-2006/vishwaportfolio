@@ -266,7 +266,7 @@ function Index() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <Project img={travelImg} tag="Travel Film" title="Arctic Whispers" sub="Cinematic Edit / Color Grade" />
             <Project img={youtubeImg} tag="YouTube" title="Talking Head Series" sub="12-Episode Post-Production" />
             <Project img={motionImg} tag="Motion Graphics" title="Think · Create · Grow" sub="Brand Motion / Social" />
@@ -375,7 +375,7 @@ function Project({ img, tag, title, sub }: { img: string; tag: string; title: st
   return (
     <div className="group cursor-pointer">
       <div className="relative overflow-hidden rounded-3xl mb-4 shadow-2xl">
-        <img src={img} alt={title} loading="lazy" className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" />
+        <img src={img} alt={title} loading="lazy" className="w-full aspect-[9/16] object-cover transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-brand">
           {tag}
         </div>
